@@ -1,7 +1,7 @@
-/* TEST FILE - Copyright (c) 2017 ranged-stream - Tanase Laurentiu Iulian - https://github.com/RealTimeCom/range-stream */
+/* TEST FILE - Copyright (c) 2017 bytes-stream - Tanase Laurentiu Iulian - https://github.com/RealTimeCom/bytes-stream */
 'use strict';
 
-const ranged = require('./index.js'),
+const bytes = require('./index.js'),
     Readable = require('stream').Readable;
 
 class read extends Readable {
@@ -22,6 +22,6 @@ read.prototype._read = function(size) {
 };
 
 let s = Buffer.from('0123456789');
-(new read(3, s)).pipe(new ranged([1, 5])).
+(new read(3, s)).pipe(new bytes([1, 5])).
 on('data', d => console.log('data', d.toString())).
 on('end', () => console.log('end'));

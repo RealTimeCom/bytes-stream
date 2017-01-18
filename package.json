@@ -1,14 +1,14 @@
 {
-  "name": "ranged-stream",
+  "name": "bytes-stream",
   "version": "1.0.0",
-  "description": "Ranged Stream - output range bytes from readable stream",
+  "description": "Bytes Stream - output range bytes from readable stream",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RealTimeCom/ranged-stream.git"
+    "url": "git+https://github.com/RealTimeCom/bytes-stream.git"
   },
   "keywords": [
     "stream",
@@ -22,7 +22,7 @@
   "author": "Tanase Laurentiu Iulian <expertphp@gmail.com> (https://github.com/RealTimeCom)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RealTimeCom/ranged-stream/issues"
+    "url": "https://github.com/RealTimeCom/bytes-stream/issues"
   },
-  "homepage": "https://github.com/RealTimeCom/ranged-stream"
+  "homepage": "https://github.com/RealTimeCom/bytes-stream"
 }
