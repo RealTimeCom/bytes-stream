@@ -1,8 +1,8 @@
-/* SOURCE FILE - Copyright (c) 2017 range-stream - Tanase Laurentiu Iulian - https://github.com/RealTimeCom/range-stream */
+/* SOURCE FILE - Copyright (c) 2017 ranged-stream - Tanase Laurentiu Iulian - https://github.com/RealTimeCom/range-stream */
 'use strict';
 const Transform = require('stream').Transform;
 
-class range extends Transform {
+class ranged extends Transform {
     constructor(r) {
         super();
         this.r = r;
@@ -34,4 +34,4 @@ ranged.prototype._transform = function(chunk, enc, cb) {
     cb();
 };
 
-module.exports = range;
+module.exports = ranged;
