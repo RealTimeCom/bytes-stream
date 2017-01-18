@@ -9,7 +9,7 @@ class bytes extends Transform {
         this.t = 0; /*total bytes received*/
     }
 }
-ranged.prototype._transform = function(chunk, enc, cb) {
+bytes.prototype._transform = function(chunk, enc, cb) {
     let s = this.t,
         /*save prev value*/
         l = chunk.length;
